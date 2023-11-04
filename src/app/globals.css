@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* font google */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gurajada&family=Homemade+Apple&family=Marck+Script&family=Outfit:wght@500&family=Poppins:wght@100;400;500;600&family=Quicksand:wght@500;700&family=Work+Sans:wght@100;400;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  transition: 0.3s ;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.body{
+  color: #3f4c52;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.line{
+  border-bottom: 2px dashed #3f4c52;
+}
+
+.active{
+  background-color: #81ecec;
 }
